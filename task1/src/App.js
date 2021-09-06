@@ -4,14 +4,14 @@ import landscape from "./images/landscape.png";
 import "./App.css";
 
 const App = () => {
-    const [value, setValue] = useState(-1);
+    const [value, setValue] = useState(false);
 
     const onClick = () => {
-        setValue(0);
+        setValue(true);
     };
 
     const Click = () => {
-        setValue(1);
+        setValue(false);
     };
 
     return (
@@ -19,21 +19,21 @@ const App = () => {
             <div>
                 <img
                     onClick={onClick}
-                    className={value === 0 ? "sky img-t" : "sky img-rt"}
+                    className={value === true ? "sky img-t" : "sky img-rt"}
                     src={sky}
                     alt="sky"
                 />
                 <img
                     onClick={onClick}
                     className={
-                        value === 0 ? "landscape img-t" : "landscape img-rt"
+                        value === true ? "landscape img-t" : "landscape img-rt"
                     }
                     src={landscape}
                     alt="landscape"
                 />
                 <h1
                     onClick={onClick}
-                    className={value === 0 ? "text text-t" : "text text-rt"}
+                    className={value === true ? "text text-t" : "text text-rt"}
                 >
                     TREKK
                 </h1>
