@@ -1,6 +1,7 @@
 # Task 1
 
-This task was about creating a animation dropdown
+This task was about creating a animation
+When you click on the screen you will see the effects
 
 ## Installation
 
